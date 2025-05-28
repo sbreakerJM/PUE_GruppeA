@@ -33,7 +33,7 @@ def get_all_names(user_data):
     for person_dict in user_data:
          #füge den firstname zu den user_names hinzu
 
-        user_names.append(person_dict['lastname']+ ", " + person_dict['firstname'])
+        user_names.append(person_dict['lastname']+ ", "+ person_dict['firstname'])
     return user_names
 
 def get_image(person_name):
