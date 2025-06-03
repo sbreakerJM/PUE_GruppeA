@@ -1,6 +1,6 @@
 # PUE_GruppeA
 
-# Aufgabe 1
+# Termin 1: Abgabe 1
 Im Rahmen der PÜ2 haben wir in dieser Aufgabe ein neues Projekt in VS-Code erstellt und in ein GitHub Repository gepublished. 
 
 ## Projekterstellung mit PDM
@@ -20,12 +20,50 @@ Den ausgegebenen Plot finden Sie unter `figures`
 ## Endprodukt (Plot der Leistungskurve)
 ![](figures/power_curve.png)
 
-# Aufgabe 2
+# Termin 2:
 
-## Erstellen eines UML - Dragramms für Aufgabe 2:
+Im 2. Termin der PÜ SS 2025 haben wir uns mit folgenden Dingen befasst: UML-Klassendiagramm, als auch ein Flow-Chart zu unserem Projekt. 
+Außerdem hatten wir eine Einführung in Streamlit und unsere erste Python-basierte Webseite damit erstellt.
+
+Daraus entstanden die Dateien `src/load_user_data.py`, als auch erste Einträge in der `main.py`.
+
+`load_user_data.py` zieht User Daten aus unserer "Datenbank" `data/person_db.json`.
+
+In `main.py` werden Daten wie "Vorname" und "Nachname" benötigt, da sie von Streamlit wieder verwendet werden.
+
+Die Website ist aufrufbar mit dem Befehl: "streamlit run main.py" im Terminal.
+
+## Erstellen eines UML - Dragramms:
 
 ![](Docs/UML1.png)
 
-## Flow Chart:
+## Erstellen eines Flow Charts:
 
 ![](Docs/ekg_data._acticity.svg)
+
+## Screenshot aus Streamlit:
+
+![](figures/Screenshot_EKG_Termin2.png)
+
+# Termin 3: Abgabe 2
+
+Im 3. Termin ging es darum, einen Interaktiven Plot zu erstellen, und auf unserer Streamlit Site anzuzeigen. Dazu haben wir die Datei `analyze_hr_data2.py`erstellt, welche ihre Daten aus `acivity.csv`zieht. Danach haben wir einen Grafen mit plotly erstellt der uns die Herzrate interaktiv anzeigt, als auch in 5 Zonen einteilt.
+
+Wir haben unsere `main.py` um die funktion "analyze_hr_data" erweitert, dass uns der Graph ebenfalls auf streamlit angezeigt wird.
+
+## Screenshot aus Streamlit:
+
+![](figures/Screenshot_HR_Termin3.png)
+
+# Termin 4: Abgabe 3
+
+Im 4. Termin haben wir uns mit Algorithmen beschäftigt.
+Hierzu kamen wir zurück zu unserer Leistungskurve aus Termin 1. Diesmal soll diese in einem interaktiven Plot mittels plotly erstellt werden, als auch ein Dataframe der die Leistung in W und die Zeit in s ausgibt. 
+
+Unsere neue Funktion wurde in `src/power_curve_2` erstellt und ist unter der neuen `main_power_array.py` ausführbar.
+
+## Screenshots der Ausgabe aus `main_power_array.py`:
+
+![](figures/Screenshot_power_curve2.png)
+
+![](figures/Screenshot_df_power_curve.png)
