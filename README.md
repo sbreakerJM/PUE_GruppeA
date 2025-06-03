@@ -66,4 +66,6 @@ Unsere neue Funktion wurde in `src/power_curve_2` erstellt und ist unter der neu
 
 ![](figures/Screenshot_power_curve2.png)
 
+Das Plot zeigt die maximale Dauer an, wo der Benutzer oberhalb einer bestimmten Wattzahl gewesen ist. Hierbei wird immer nur die längste Dauer gezählt, wenn der Benutzer nach Pausen wieder eine Wattzahl erreicht hatte.
+
 ![](figures/Screenshot_df_power_curve.png)
