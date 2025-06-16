@@ -69,3 +69,23 @@ Unsere neue Funktion wurde in `src/power_curve_2` erstellt und ist unter der neu
 Das Plot zeigt die maximale Dauer an, wo der Benutzer oberhalb einer bestimmten Wattzahl gewesen ist. Hierbei wird immer nur die längste Dauer gezählt, wenn der Benutzer nach Pausen wieder eine Wattzahl erreicht hatte.
 
 ![](figures/Screenshot_df_power_curve.png)
+
+# Termin 5 & 6 : Abgabe 4
+
+Im 5. und 6. Termin haben wir uns mit objektorientierte Programmierung beschäftigt.
+Dabei haben wir die `load_user_data.py` und `main.py` weitestgehend vereinfacht, um eine übersichtliche "Soft"- gecodete Basis zu haben.
+
+Danach wurde die Datei `ekg_data.py` erstellt, um aus unserer Datenbank `data/person_db.json` die Ekg "ID", "Date" und "result_link" auszulesen.
+
+Diese wurde in eine Klasse "Ekg_tests" übergeben mit welchen folgende Funktionen definiert wurden:
+
+- get_reslult_link()
+- load_df_ekg()
+- find_peaks()
+- estimate_hr()
+- plot_time_series()
+
+Danach wird die Klasse in die `main.py` eingepflegt und in Streamlit ausgegeben:
+
+## Ausgabe der EKG-Daten und der Durschnittlichen HF:
+![](figures\Screenshot_Ekg_data_Aufgabe4.png)
