@@ -88,4 +88,4 @@ Diese wurde in eine Klasse "Ekg_tests" übergeben mit welchen folgende Funktione
 Danach wird die Klasse in die `main.py` eingepflegt und in Streamlit ausgegeben:
 
 ## Ausgabe der EKG-Daten und der Durschnittlichen HF:
-![](figures\Screenshot_Ekg_data_Aufgabe4.png)
+![](figures/Screenshot_Ekg_data_Aufgabe4.png)
