@@ -2,9 +2,9 @@
 import json
 import os
 from PIL import Image
+from datetime import datetime
 
-#example usage
-FILE_PATH = "data/person_db.json"  # Replace with your actual file path
+FILE_PATH = "data/person_db.json"
 # Definition der Personenklasse
 
 class Person:
@@ -15,9 +15,19 @@ class Person:
         self.lastname = lastname
         self.picture_path = picture_path
         self.ekg_tests = ekg_tests
+
     
     def get_fullname(self):
         return self.lastname +", " + self.firstname
+    
+    def calc_age(self):
+        return datetime.now().year - self.date_of_birth
+    
+    def calc_max_heart_rate(self):
+        age = self.calc_age()
+        return 220 - age
+    
+     
 
 def load_user_objects(file_path):
     if not os.path.exists(file_path):
@@ -27,6 +37,7 @@ def load_user_objects(file_path):
         data = json.load(f)
     
         person_list = []
+
     for person_person_dict in data:
         #print(person_person_dict)
         
@@ -56,9 +67,7 @@ if __name__ == "__main__":
 
     person_list = load_user_objects(FILE_PATH)
     print(person_list)
+    print(person_list[0].calc_age())
+    print(person_list[0].calc_max_heart_rate())
+    print(person_list[1].load_by_id(id))
 
-    #name_list = get_all_names(user_data)
-    #print(name_list)
-    #person_1  = Person(1, "1990-01-01", "John", "Doe", "figures\Screenshot_HR_Termin3.png.jpg", [])
-    #print(person_1.firstname)
-    #print(person_1.get_fullname())
